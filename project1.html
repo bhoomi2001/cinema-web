@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Theatre</title>
+</head>
+<body>
+    <section class ="showcase">
+        <header>
+            <h2 class="logo">Movie Theatre</h2>
+            <div class="toggle"></div>
+        </header>
+
+        <video src="theatre.mp4" width="100%"height="70%"muted loop autoplay></video>
+       
+        <div class="overlay"></div>
+       
+        <div class="text">
+        <h2>Never Stop</h2>
+        <h3>Explore the cinemas</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi rem in minima possimus, odit, animi quo expedita tempore sunt dolor veniam? Ullam aut illum, vero saepe odit neque nihil natus.</p>
+        <a href="#">Explore</a> 
+        </div>
+        <ul class="social" type="none">
+            <li><a href="#"><img src="facebook.png"alt="facebook logo" height="17px" width="11px"></a></li>
+            <li><a href="#"><img src="twitter.png"alt="twitter logo"height="19px" width="25px"></a></li>
+            <li><a href="#"><img src="instagram.jpg"alt="instagram logo"height="19px" width="21px"></a></li>
+        </ul>
+    </section> 
+    <div class="menu">
+        <ul>
+           <li><a href="#">Home</a> </li> 
+           <li><a href="#">Latest Movies</a> </li> 
+           <li><a href="#">Book your tickets</a> </li> 
+           <li><a href="#">Contact</a> </li> 
+        </ul>
+    </div>
+
+    <script>
+        const menuToggle = document.querySelector('.toggle')
+        const showcase = document.querySelector('.showcase')
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active')
+            showcase.classList.toggle('active')
+        } )
+    </script>
+</body>
+</html>
